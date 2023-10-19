@@ -1,0 +1,87 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+jspm_packages/
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional bower cache directory
+bower_components/
+
+# Optional post-install web build directory
+public/dist
+
+# Optional post-install web server cache
+public/webapp.cache
+
+# Optional babel cache
+.babel_cache/
+
+# Optional eslint cache
+.eslint/
+.eslintcache
+
+# Optional mocha test results
+test-results/
+
+# Editor directories
+.vscode/
+.idea/
+
+# IDE files
+*.iml
+*.ipr
+*.iws
+*.bak
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Mac desktop services store files
+.AppleDouble
+.LSOverride
+
+# Node.js for VSCode
+.vscode/node_modules
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Puppeteer Screenshots
+screenshots/
+
+# Next.js build output
+.next/
+out/
+
+# Tailwind CSS
+.cache/
+dist/
+.purgecss-*.css

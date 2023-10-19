@@ -1,0 +1,42 @@
+
+<%- include ("partials/header.ejs") %>
+
+<div id="date">
+    <h2> <%= date %> </h2>    
+</div>
+
+<div class="container">
+    <h1>To-Do List</h1>
+    <% items.forEach((task) => { %>
+        <div class="item">
+            <input type="checkbox" class="myCheckbox">
+            <p class="text"> <%= task %></p>
+        </div>
+    <% }) %>
+    <form class="item" action="/submit" method="POST">
+        <input type="text" name="item" placeholder="New Item">
+        <button type="submit">Add</button>
+    </form>
+</div>
+
+<script>
+    function updateTextDecoration(checkbox) { 
+        var taskText = checkbox.nextElementSibling;
+        if  (checkbox.checked) {
+            taskText.classList.add("checked");
+        } else {
+            taskText.classList.remove("checked");
+        }
+    }
+
+var checkboxes = document.querySelectorAll(".myCheckbox");
+
+checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+        updateTextDecoration(checkbox);
+    });
+});
+
+</script>
+
+<%- include ("partials/footer.ejs") %>
